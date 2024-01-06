@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:id="@+id/linearItem"
+        android:paddingStart="@dimen/_7sdp"
+        android:paddingEnd="@dimen/_2sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:elevation="@dimen/_2sdp"
+        android:background="@drawable/white_background_rect_outline_gray"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_image"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/user_image_place_holder"
+                android:layout_gravity="center"
+                android:gravity="top"
+                android:padding="@dimen/_3sdp"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+
+                    >
+
+
+
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="User Name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="end"
+
+                        android:id="@+id/llCb"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        >
+                        <CheckBox
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:id="@+id/cb_review"
+                            android:buttonTint="@color/yellow"
+                            android:layout_gravity="end"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="start"
+                android:paddingStart="@dimen/_4sdp"
+
+                >
+                <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:numStars="5"
+                    android:id="@+id/ratingByUser"
+                    android:progressTint="@color/yellow"
+                    android:rating="4"
+                    android:scaleX="1"
+                    android:scaleY="1" />
+
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="start"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:maxLines="2"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="@string/dummy_text_long"
+                android:textColor="@color/textgray"
+                android:textSize="@dimen/_11sdp" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</layout>

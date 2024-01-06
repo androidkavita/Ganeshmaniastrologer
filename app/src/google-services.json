@@ -1,0 +1,84 @@
+{
+  "project_info": {
+    "project_number": "201969651484",
+    "project_id": "call-astro-8786f",
+    "storage_bucket": "call-astro-8786f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201969651484:android:f8e1b9210ac8b41f32f4d9",
+        "android_client_info": {
+          "package_name": "com.callastro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201969651484-1rpsabba95vblmigql5oriclnsigt7kp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.callastro",
+            "certificate_hash": "28521122b0c48ffef21beec8ec66e46dfa720ea0"
+          }
+        },
+        {
+          "client_id": "201969651484-onb0gfvllshli3foj7u7k4tki7rdt6d9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuubPyvpteyYc3NLNIohK0IpILvs0Dzw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201969651484-onb0gfvllshli3foj7u7k4tki7rdt6d9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201969651484:android:99c8cbbd0e138d9d32f4d9",
+        "android_client_info": {
+          "package_name": "com.callastrouser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201969651484-ov7uqncn6j5180tbo9lcj8ag4hp5v3e6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.callastrouser",
+            "certificate_hash": "28521122b0c48ffef21beec8ec66e46dfa720ea0"
+          }
+        },
+        {
+          "client_id": "201969651484-onb0gfvllshli3foj7u7k4tki7rdt6d9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuubPyvpteyYc3NLNIohK0IpILvs0Dzw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201969651484-onb0gfvllshli3foj7u7k4tki7rdt6d9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

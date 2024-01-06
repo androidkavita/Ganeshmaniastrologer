@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/applicationbackground"
+        android:layout_gravity="center"
+        android:gravity="center"
+        tools:context=".ui.activities.LoginActivity">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_110sdp"
+            android:src="@drawable/logo" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:gravity="center" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Phone Number"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+<!--        <EditText-->
+<!--            android:id="@+id/etPhone"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="@dimen/_5sdp"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            android:layout_marginStart="@dimen/_15sdp"-->
+<!--            android:layout_marginEnd="@dimen/_15sdp"-->
+<!--            android:fontFamily="@font/roboto_regular"-->
+<!--            android:digits="0123456789"-->
+<!--            android:background="@drawable/focus"-->
+<!--            android:elevation="@dimen/_5sdp"-->
+<!--            android:hint="Enter your number"-->
+<!--            android:inputType="phone"-->
+<!--            android:imeOptions="actionDone"-->
+<!--            android:maxLength="15"-->
+<!--            android:padding="@dimen/_12sdp"-->
+<!--            android:singleLine="true"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/_12sdp" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:gravity="center"
+            android:background="@drawable/focus"
+            android:orientation="horizontal">
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCountryPickerClick"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:ccp_textSize="15dp"
+                app:ccp_showPhoneCode="true"
+                tools:ignore="MissingClass,OnClick" />
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:background="@null"
+                android:elevation="@dimen/_5sdp"
+                android:hint="Enter your number."
+                android:maxLength="10"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:imeOptions="actionDone"
+                android:paddingVertical="@dimen/_12sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSendOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_100sdp"
+            android:background="@drawable/button"
+            android:text="Send OTP"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textAllCaps="false"
+            android:paddingHorizontal="@dimen/_60sdp"
+            android:paddingVertical="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_25sdp" />
+
+    </LinearLayout>
+</layout>

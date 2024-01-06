@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_1sdp"
+        android:orientation="vertical"
+        android:id="@+id/linearItem"
+        android:paddingVertical="@dimen/_2sdp"
+        android:elevation="@dimen/_2sdp">
+
+        <CheckBox
+            android:id="@+id/cb_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:maxLines="2"
+            android:text="Reason 1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:buttonTint="@color/theme_purple"/>
+    </LinearLayout>
+</layout>

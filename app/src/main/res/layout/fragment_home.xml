@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.fragments.HomeFragment">
+
+
+<!--        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--            android:id="@+id/swipeRefreshlayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/ll_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_200sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <!-- <ImageView
+                             android:id="@+id/iv_img"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:src="@drawable/image_placeholder"
+                             android:layout_gravity="center"
+
+                             android:padding="@dimen/_5sdp"/>-->
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_160sdp"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginVertical="@dimen/_100sdp"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            app:cardElevation="@dimen/_8sdp">
+
+                            <com.smarteist.autoimageslider.SliderView
+                                android:id="@+id/imageSlider"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:shadowDx="@null"
+                                android:shadowRadius="@null"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+                                app:sliderAnimationDuration="600"
+                                app:sliderAutoCycleDirection="right"
+                                app:sliderAutoCycleEnabled="true"
+                                app:sliderIndicatorAnimationDuration="600"
+                                app:sliderIndicatorEnabled="true"
+                                app:sliderIndicatorGravity="center|bottom"
+                                app:sliderIndicatorMarginBottom="30dp"
+                                app:sliderIndicatorOrientation="horizontal"
+                                app:sliderIndicatorPadding="5dp"
+                                app:sliderIndicatorRadius="2dp"
+                                app:sliderIndicatorSelectedColor="@color/theme_purple"
+                                app:sliderIndicatorUnselectedColor="#FFF"
+                                app:sliderScrollTimeInSec="2" />
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:weightSum="3">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/calender"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_110sdp"
+                            app:cardElevation="@dimen/_2sdp"
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:background="@drawable/homedrawable"
+                                android:orientation="vertical"
+                                android:paddingTop="@dimen/_10sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:src="@drawable/calender" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:gravity="center"
+                                    android:text="Calendar Details"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/chatrequestofcustomer"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_110sdp"
+                            app:cardElevation="@dimen/_2sdp"
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                >
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:src="@drawable/chatrequest"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:gravity="center"
+                                    android:layout_marginHorizontal="@dimen/_5sdp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:text="Chat Request"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/callrequestofcustomer"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_110sdp"
+                            app:cardElevation="@dimen/_2sdp"
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                >
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:src="@drawable/callrequest"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:gravity="center"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginHorizontal="@dimen/_5sdp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:text="Call Request"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:weightSum="3">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/updateprofile"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_110sdp"
+                            app:cardElevation="@dimen/_2sdp"
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/homedrawable"
+                                >
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:src="@drawable/profile"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:gravity="center"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginHorizontal="@dimen/_5sdp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:text="Update Profile"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/confirmationonbooking"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_110sdp"
+                            app:cardElevation="@dimen/_2sdp"
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:background="@drawable/homedrawable"
+                                >
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:src="@drawable/confirmationbooking"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:gravity="center"
+                                    android:layout_marginHorizontal="@dimen/_5sdp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:text="Confirmation on Bookings"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cancellationbyuser"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_110sdp"
+                            app:cardElevation="@dimen/_2sdp"
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/homedrawable"
+                                >
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:src="@drawable/reportcross"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:layout_marginHorizontal="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:text="Cancellation By User"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:weightSum="3">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/totalearnings"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_110sdp"
+                            app:cardElevation="@dimen/_2sdp"
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/homedrawable"
+                                >
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:src="@drawable/totalearnings"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:gravity="center"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginHorizontal="@dimen/_5sdp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:text="Total Earning"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/requestmoney"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_110sdp"
+                            app:cardElevation="@dimen/_2sdp"
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/homedrawable">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:src="@drawable/callrequest"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:gravity="center"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginHorizontal="@dimen/_5sdp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:text="Request admin to transfer money"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_Fixedsession"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_110sdp"
+                            app:cardElevation="@dimen/_2sdp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                >
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:src="@drawable/reportcheck"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:gravity="center"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginHorizontal="@dimen/_5sdp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:text="Fixed session"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+<!--        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+
+    </LinearLayout>
+</layout>

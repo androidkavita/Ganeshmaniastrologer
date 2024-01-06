@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        tools:context=".ui.activities.EmailUsActivity">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:background="@color/transparent"
+                    android:elevation="@dimen/_5sdp"
+                    android:text="@string/promotional_chat"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    >
+                    <Switch
+                        android:id="@+id/switch_promotionalChat"
+                        android:layout_width="match_parent"
+                        android:checked="true"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:thumbTint="@color/theme_purple"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:theme="@style/Theme.CallAstro"
+                        tools:ignore="UseSwitchCompatOrMaterialXml"                        />
+                    <!--app:thumb="@color/theme_red"
+                        android:thumbTint="@color/theme_yellow"-->
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/very_light_gray"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:background="@color/transparent"
+                    android:elevation="@dimen/_5sdp"
+                    android:text="@string/promotional_call"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    >
+                    <Switch
+                        android:id="@+id/switch_promotionalCall"
+                        android:layout_width="match_parent"
+                        android:thumbTint="@color/theme_purple"
+
+                        android:checked="true"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:theme="@style/Theme.CallAstro"
+                        tools:ignore="UseSwitchCompatOrMaterialXml"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/very_light_gray"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:background="@color/transparent"
+                    android:elevation="@dimen/_5sdp"
+                    android:text="@string/chat"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    >
+                    <Switch
+                        android:id="@+id/switch_chat"
+                        android:layout_width="match_parent"
+                        android:thumbTint="@color/theme_purple"
+
+                        android:checked="true"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:theme="@style/Theme.CallAstro"
+                        tools:ignore="UseSwitchCompatOrMaterialXml"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/very_light_gray"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:background="@color/transparent"
+                    android:elevation="@dimen/_5sdp"
+                    android:text="@string/audio_call"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    >
+                    <Switch
+
+                        android:id="@+id/switch_audioCall"
+                        android:layout_width="match_parent"
+                        android:thumbTint="@color/theme_purple"
+
+                        android:checked="true"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:theme="@style/Theme.CallAstro"
+                        tools:ignore="UseSwitchCompatOrMaterialXml"
+
+
+
+
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/very_light_gray"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:background="@color/transparent"
+                    android:elevation="@dimen/_5sdp"
+                    android:text="@string/video_call"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    >
+                    <Switch
+                        android:id="@+id/switch_videoCall"
+                        android:layout_width="match_parent"
+                        android:thumbTint="@color/theme_purple"
+
+                        android:checked="true"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:theme="@style/Theme.CallAstro"
+                        tools:ignore="UseSwitchCompatOrMaterialXml"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/very_light_gray"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</layout>
